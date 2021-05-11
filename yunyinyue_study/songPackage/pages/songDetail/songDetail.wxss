@@ -67,6 +67,24 @@
     bottom:0;
     margin:auto;
 }
+
+/* 歌词显示 */
+.scrollLrc {
+    position: absolute;
+    bottom: 280rpx;
+    width: 640rpx;
+    height: 120rpx;
+    line-height: 120rpx;
+    text-align: center;
+  }
+.bigLrc {
+    position: absolute;
+    bottom: 280rpx;
+    width: 640rpx;
+    height: 640rpx;
+    line-height: 120rpx;
+    text-align: center;
+}
 /* 底部控制区域 */
 .musicControl {
     position: absolute;

@@ -176,8 +176,8 @@
   /* .personalContent .scrollView {
     display: flex;
     height: 160rpx;
-  } */
-  /* .personalContent .recentPlay {
+  }
+  .personalContent .recentPlay {
     display: flex;
   } */
   

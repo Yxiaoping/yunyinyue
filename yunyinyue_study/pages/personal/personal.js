@@ -37,7 +37,7 @@ Page({
     let recentPlay = await request('/user/record',{uid:userId,type:1})
     // 为数组添加一个id
     let index = 0
-    let recentPlayList = recentPlay.weekData.slice(0,10).map(item => {
+    let recentPlayList = recentPlay.weekData.splice(0,10).map(item => {
       item.id = index++
       return item
     })
