@@ -1,0 +1,109 @@
+/* pages/index/index.wxss */
+/* 轮播图区域  */
+.banners {
+  width: 100%;
+  height: 300rpx;
+}
+.banners image {
+  width: 100%;
+  height: 100%
+}
+/* 5个图标的导航区域  */
+.navContainer {
+  display: flex;
+}
+.navItem {
+  display: flex;
+  flex-direction: column;  /* 元素纵向布局 */
+  align-items: center; /* 文本水平居中 */
+  width: 20%;
+}
+.navItem .iconfont {
+  width: 100rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 50%;
+  text-align: center;
+  background-color: rgb(240, 19, 19);
+  font-size: 50rpx;
+  color: white;
+  margin: 20rpx 0;
+}
+.navItem text { /* 标签的权重1没有类的权重10高 */
+  font-size: 26rpx;
+}
+/* 推荐歌曲区域 */
+.recommendContainer {
+  padding: 20rpx;
+}
+/* 内容区域 */
+.recommondScroll {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 30rpx;
+  height: 300rpx;
+}
+.scroll-item {
+  width: 200rpx;
+  margin-right: 20rpx;
+}
+.scroll-item image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+.scroll-item text {
+  font-size: 26rpx;
+  /* 单行文本移出隐藏，省略号代替 */
+  /* white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block; text是内联元素，不能让overflow生效 */
+
+  /* 多行文本移出隐藏，省略号代替 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;  /* 多行文本移出隐藏是基于webkit的属性 */
+  -webkit-box-orient: vertical; /* 设置对其模式 */
+  -webkit-line-clamp: 2; /* 设置行数 */
+}
+/* 排行榜 */
+.topList {
+  padding: 20rpx;
+}
+.topListSwiper {
+  height: 460rpx;
+}
+.swiperItem {
+  width: 96%;
+  background-color: #fbfbfb;
+}
+.swiperItem .title {
+  font-size: 30rpx;
+  line-height: 80rpx;
+}
+.musicItem {
+  /* 当一个元素设置为flex，其子元素会自动成为block元素 */
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.musicItem image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 6rpx;
+}
+.musicItem .count {
+  width: 200rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+.musicItem .musicName {
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  max-width: 400rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

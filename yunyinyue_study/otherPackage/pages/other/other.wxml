@@ -1,0 +1,17 @@
+<!-- 引入模板 -->
+<!-- 引入结构 -->
+<import src='/template/myTemplate/myTemplate.wxml'></import> 
+<!-- 在样式文件中引入样式 -->
+<view class="otherContainer">
+    <!-- 测试模板 -->
+    <view class="Othertitle">测试使用模板</view>
+    <!-- 使用模板 -->
+    <!-- data中的数据为js中data中的数据 -->
+    <template is='myTmp' data='{{...person}}'></template>
+    <view>*************</view>
+    <view>*************</view>
+    <view>*************</view>
+    <!-- 测试获取用户唯一标识openId -->
+    <view class="Othertitle">获取用户唯一标识openId </view>
+    <button bindtap='handleGetOpenId'>获取openId</button>
+</view>
